@@ -1,0 +1,22 @@
+.results {
+  max-width: 80%;
+  padding: 5%;
+  padding-top: 2%;
+  background-color: white;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.answer.correct:before {
+  content: '\2713';
+  display: inline-block;
+  color: #66bdff;
+  padding: 0 6px 0 0;
+}
+
+.answer:not(.correct):before {
+  content: '\2717';
+  display: inline-block;
+  color: #cc716e;
+  padding: 0 6px 0 0;
+}

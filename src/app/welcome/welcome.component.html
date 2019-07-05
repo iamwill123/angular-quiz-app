@@ -1,0 +1,13 @@
+<div class="welcome">
+  <h1>Welcome to your quiz.</h1>
+  <p>Pick your poison: </p>
+  <div class="quizzes">
+    <div class="quiz" *ngFor="let q of quiz">
+      <div>{{q.label}}</div>
+      <div>{{q.description}}</div>
+      <div>
+        <a routerLink="/{{q.name}}">Start quiz</a>
+      </div>
+    </div>
+  </div>
+</div>
